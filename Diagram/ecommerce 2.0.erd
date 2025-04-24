@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="ecommerce-1.erd">
+	<entities>
+		<data-source id="mysql8-196678aafaf-344f7c490d148d14">
+			<entity id="1" name="clients" fq-name="ecommercev2.clients" order="0" x="876" y="93">
+				<path name="ecommercev2"/>
+			</entity>
+			<entity id="2" name="orders" fq-name="ecommercev2.orders" order="1" x="1153" y="288">
+				<path name="ecommercev2"/>
+			</entity>
+			<entity id="3" name="payments" fq-name="ecommercev2.payments" order="2" x="429" y="302">
+				<path name="ecommercev2"/>
+			</entity>
+			<entity id="4" name="product" fq-name="ecommercev2.product" order="3" x="1147" y="628">
+				<path name="ecommercev2"/>
+			</entity>
+			<entity id="5" name="productorder" fq-name="ecommercev2.productorder" order="4" x="773" y="522">
+				<path name="ecommercev2"/>
+			</entity>
+			<entity id="6" name="productseller" fq-name="ecommercev2.productseller" order="5" x="1425" y="467">
+				<path name="ecommercev2"/>
+			</entity>
+			<entity id="7" name="productstorage" fq-name="ecommercev2.productstorage" order="6" x="1527" y="899">
+				<path name="ecommercev2"/>
+			</entity>
+			<entity id="8" name="productsupplier" fq-name="ecommercev2.productsupplier" order="7" x="819" y="739">
+				<path name="ecommercev2"/>
+			</entity>
+			<entity id="9" name="seller" fq-name="ecommercev2.seller" order="8" x="1609" y="619">
+				<path name="ecommercev2"/>
+			</entity>
+			<entity id="10" name="storagelocation" fq-name="ecommercev2.storagelocation" order="9" x="1182" y="959">
+				<path name="ecommercev2"/>
+			</entity>
+			<entity id="11" name="supplier" fq-name="ecommercev2.supplier" order="10" x="837" y="936">
+				<path name="ecommercev2"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="FK_orders_client" fq-name="ecommercev2.orders.FK_orders_client" type="fk" pk-ref="1" fk-ref="2"/>
+		<relation name="FK_payment_client" fq-name="ecommercev2.payments.FK_payment_client" type="fk" pk-ref="1" fk-ref="3"/>
+		<relation name="FK_payment_order" fq-name="ecommercev2.payments.FK_payment_order" type="fk" pk-ref="2" fk-ref="3"/>
+		<relation name="fk_productOrder_order" fq-name="ecommercev2.productorder.fk_productOrder_order" type="fk" pk-ref="2" fk-ref="5"/>
+		<relation name="fk_productOrder_product" fq-name="ecommercev2.productorder.fk_productOrder_product" type="fk" pk-ref="4" fk-ref="5"/>
+		<relation name="fk_productSeller_product" fq-name="ecommercev2.productseller.fk_productSeller_product" type="fk" pk-ref="4" fk-ref="6"/>
+		<relation name="fk_productSupplier_product" fq-name="ecommercev2.productsupplier.fk_productSupplier_product" type="fk" pk-ref="4" fk-ref="8"/>
+		<relation name="fk_storageLocation_product" fq-name="ecommercev2.storagelocation.fk_storageLocation_product" type="fk" pk-ref="4" fk-ref="10"/>
+		<relation name="fk_storageLocation_storage" fq-name="ecommercev2.storagelocation.fk_storageLocation_storage" type="fk" pk-ref="7" fk-ref="10"/>
+		<relation name="fk_productSeller_seller" fq-name="ecommercev2.productseller.fk_productSeller_seller" type="fk" pk-ref="9" fk-ref="6"/>
+		<relation name="fk_productSupplier_supplier" fq-name="ecommercev2.productsupplier.fk_productSupplier_supplier" type="fk" pk-ref="11" fk-ref="8"/>
+	</relations>
+</diagram>
