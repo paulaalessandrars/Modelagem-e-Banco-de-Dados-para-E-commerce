@@ -39,15 +39,17 @@ Este projeto tem como objetivo a modelagem e implementação de um banco de dado
 
 ## 🧩 Modelagem Visual
 
-📷 **Diagrama Entidade-Relacionamento (ERD):**  
-![Diagrama ERD](https://i.imgur.com/3AfeQcf.png)
+📷 **Diagrama Entidade-Relacionamento (ERD):** 
+
+![Diagrama ERD](imgs/ERD.png)
 
 📷 **Modelo Relacional:**  
-👉 [Visualizar modelo relacional](COLE_AQUI_O_LINK_DO_MODELO_RELACIONAL)  
-<sub>*Substitua o link acima por um URL público (Imgur, Google Drive, etc.)*</sub>
+
+![Modelo Relacional](imgs/diagramaDbeaver.png) 
 
 📷 **Exemplo de Relacionamento entre Tabelas:**  
-![Relacionamento entre tabelas](https://i.imgur.com/DRZGdVU.png)
+
+![Relacionamento entre tabelas](imgs/relacionamentoDbeaver.png)
 
 ---
 
