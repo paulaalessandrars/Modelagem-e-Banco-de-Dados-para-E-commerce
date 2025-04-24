@@ -69,7 +69,8 @@ Este projeto tem como objetivo a modelagem e implementação de um banco de dado
 - Métodos de pagamento utilizados por cada cliente
 
 📷 **Exemplo de consulta SQL:**  
-![Consulta SQL](https://i.imgur.com/pkZHKSK.png)
+
+![Consulta SQL](imgs/consultdbeaver.png)
 
 ---
 
@@ -90,7 +91,14 @@ Este projeto tem como objetivo a modelagem e implementação de um banco de dado
 
 ---
 
-## 🚀 Próximos Passos
+## 🚀 Próximos Passos (Sugestões de Continuidade)
 
-Este modelo pode ser facilmente adaptado a sistemas reais de e-commerce. Utilize-o como base para novos projetos ou como estrutura inicial para implementação em ambientes de produção.
+Este modelo pode ser facilmente adaptado e expandido para projetos reais. Algumas ideias para quem quiser evoluir este projeto:
+
+- Integrar o banco de dados com um backend (ex: Node.js, Django, Laravel).
+- Criar uma API RESTful para consumo dos dados por aplicações externas.
+- Desenvolver uma interface frontend simulando a loja virtual.
+- Adicionar validações, triggers e procedures para regras de negócio específicas.
+- Implementar testes automatizados com dados simulados.
+- Utilizar versionamento de banco com ferramentas como Flyway ou Liquibase.
 
