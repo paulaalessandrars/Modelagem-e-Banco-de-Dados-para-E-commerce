@@ -84,6 +84,7 @@ Este projeto tem como objetivo a modelagem e implementação de um banco de dado
 - [MySQL Workbench](https://www.mysql.com/products/workbench/)  
 - [Documentação MySQL](https://dev.mysql.com/doc/)  
 - [Guia de Modelagem de Dados – Lucidchart](https://www.lucidchart.com/pages/pt/modelagem-de-dados)
+- [DBeaver Community](https://dbeaver.io)  
 
 ---
 
